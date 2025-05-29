@@ -1,113 +1,91 @@
-# Sorting Algorithm Visualizer
+# Sorting Visualizer
 
-A React-based web application that provides interactive visualizations of various sorting algorithms. This tool helps users understand how different sorting algorithms work through animated visualizations.
+A React-based sorting algorithm visualizer that helps you understand how different sorting algorithms work through interactive animations.
 
-![Sorting Visualizer Demo](demo.gif)
+## Demo
+
+🔗 [Live Demo](https://wongkaho2626.github.io/sorting-visualizer/)
+
+![Sorting Visualizer Screenshot](screenshots/sorting-visualizer.png)
 
 ## Features
 
-### Multiple Sorting Algorithms
-- **Basic Sorts**
+- Multiple sorting algorithms:
   - Bubble Sort
   - Selection Sort
   - Insertion Sort
-- **Efficient Sorts**
   - Merge Sort
   - Quick Sort
   - Heap Sort
-- **Variant Sorts**
   - Comb Sort
   - Cocktail Shaker Sort
   - Gnome Sort
-- **Special Sorts**
-  - Tree Sort (Binary Search Tree based)
+  - Tree Sort
   - Pancake Sort
   - Bitonic Sort
 
-### Interactive Controls
-- **Array Size Control**: Adjust array size from 5 to 200 elements
-- **Speed Control**: Adjust visualization speed from 1x to 100x
-- **Start/Pause**: Control the sorting process
-- **Generate New Array**: Create a new random array
-- **Algorithm Selection**: Choose from 12 different sorting algorithms
+- Interactive controls:
+  - Adjustable array size (5-200 elements)
+  - Variable sorting speed
+  - Real-time visualization
+  - Pause/Resume functionality
 
-### Visual Features
-- **Color-Coded Bars**
-  - Blue: Unsorted elements
-  - Yellow: Elements being compared
-  - Orange: Elements being swapped
-  - Green: Sorted elements
-- **Real-time Animation**: Smooth transitions for array operations
-- **Dynamic Bar Sizing**: Automatic adjustment based on array size
+- Visual indicators:
+  - Color-coded bars for different states:
+    - Blue: Unsorted elements
+    - Yellow: Elements being compared
+    - Red: Elements being swapped
+    - Green: Sorted elements
 
-### Performance Tracking
-- **Timer**: Real-time tracking of sorting duration
-- **History**: Records of previous sorting operations
-  - Algorithm used
-  - Time taken
-  - Array size
-  - Timestamp
-- **Last 10 Operations**: Maintains a log of recent sorting activities
+- Performance tracking:
+  - Real-time execution timer
+  - Sorting history with timestamps
 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
-- npm (v6 or higher)
+- npm or yarn
 
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/yourusername/sorting-visualizer.git
-cd sorting-visualizer
-\`\`\`
+   ```bash
+   git clone https://github.com/wongkaho2626/sorting-visualizer.git
+   ```
 
-2. Install dependencies:
-\`\`\`bash
-npm install
-\`\`\`
+2. Navigate to the project directory:
+   ```bash
+   cd sorting-visualizer
+   ```
 
-3. Start the development server:
-\`\`\`bash
-npm run dev
-\`\`\`
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Algorithm Details
+5. Open your browser and visit `http://localhost:5173`
 
-### Time Complexities
+## Building for Production
 
-| Algorithm | Best Case | Average Case | Worst Case | Space Complexity |
-|-----------|-----------|--------------|------------|------------------|
-| Bubble Sort | O(n) | O(n²) | O(n²) | O(1) |
-| Selection Sort | O(n²) | O(n²) | O(n²) | O(1) |
-| Insertion Sort | O(n) | O(n²) | O(n²) | O(1) |
-| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) |
-| Quick Sort | O(n log n) | O(n log n) | O(n²) | O(log n) |
-| Heap Sort | O(n log n) | O(n log n) | O(n log n) | O(1) |
-| Comb Sort | O(n log n) | O(n²) | O(n²) | O(1) |
-| Cocktail Sort | O(n) | O(n²) | O(n²) | O(1) |
-| Gnome Sort | O(n) | O(n²) | O(n²) | O(1) |
-| Tree Sort | O(n log n) | O(n log n) | O(n²) | O(n) |
-| Pancake Sort | O(n) | O(n²) | O(n²) | O(1) |
-| Bitonic Sort | O(log² n) | O(log² n) | O(log² n) | O(n) |
+To create a production build:
 
-## Implementation Details
+```bash
+npm run build
+```
 
-### Visualization Components
-- **Bar Chart**: Represents array elements
-- **Control Panel**: User interface for algorithm selection and controls
-- **History Panel**: Displays sorting history
-- **Timer Display**: Shows elapsed time
-- **Color Legend**: Explains the meaning of different colors
+## Technologies Used
 
-### Technical Stack
-- React + Vite
+- React
 - TypeScript
-- CSS3 Animations
-- Modern JavaScript (ES6+)
+- Vite
+- CSS3
 
 ## Contributing
 
