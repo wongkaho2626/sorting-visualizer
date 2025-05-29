@@ -393,7 +393,6 @@ const SortingVisualizer: React.FC<SortingVisualizerProps> = ({ arraySize: initia
     setSorting(true);
     sortingRef.current = true;
     const arr = [...array];
-    const delay = getDelay();
 
     try {
       await quickSort(arr, 0, arr.length - 1);
