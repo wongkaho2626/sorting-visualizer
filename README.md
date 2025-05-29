@@ -6,7 +6,7 @@ A React-based sorting algorithm visualizer that helps you understand how differe
 
 🔗 [Live Demo](https://wongkaho2626.github.io/sorting-visualizer/)
 
-![Sorting Visualizer Screenshot](screenshots/sorting-visualizer.png)
+![Sorting Visualizer Screenshot](src/assets/sorting-visualizer.png)
 
 ## Features
 
